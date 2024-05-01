@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+   <ProgressBar
+       android:id="@+id/prog_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   <EditText
+       android:id="@+id/edt_city_name"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+       android:hint="Enter City Name."
+       android:textColorHint="@color/white"
+       android:gravity="center_horizontal"
+       android:textColor="@color/white"
+      android:layout_marginTop="60dp"
+        />
+
+   <Button
+      android:id="@+id/btn_get_weather"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/edt_city_name"
+      android:text="@string/get_weather"
+       android:textSize="18sp"
+      android:layout_marginTop="30dp"/>
+
+   <TextView
+       android:id="@+id/text_city_state"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/btn_get_weather"
+      android:layout_marginTop="30dp"
+      android:textSize="20sp"
+      android:textColor="@color/white"/>
+
+   <ImageView
+       android:id="@+id/weather_icon"
+       android:layout_width="240dp"
+       android:layout_height="240dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/text_city_state"
+       android:layout_marginTop="30dp"
+      />
+
+   <TextView
+       android:id="@+id/text_weather_temp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/weather_icon"
+       android:layout_marginTop="30dp"
+       android:textSize="20sp"
+       android:textColor="@color/white"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
